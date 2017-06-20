@@ -27,22 +27,46 @@ class Controller_Search extends Controller_Rest
 	 * @access  public
 	 * @return  Response
 	 */
-	public function get_list()
+	public function post_list()
 	{
-        //変数
-//        $bango = 5000000004;
-        $bango = 1000000023;
+        //**検索条件用配列
+        $condition = array();
         
-        //SQL
-        $sql = "
-            SELECT * FROM w_naiteisha WHERE `shaimbango` = :bango 
-        ";
+        //**パラメータ取得
+        //リクエストパラメータに存在しない場合セットしない
+        
+        if (input::json('aaa') !== null) {
+            $condition['aaa'] = input::json('aaa');
+        }
+        
+        if (input::json('bbb') !== null) {
+            $condition['bbb'] = input::json('bbb');
+        }
+        
+        if (input::json('ccc') !== null) {
+            $condition['ccc'] = input::json('ccc');
+        }
+        
+        //検索条件があるときのみ WHERE 句をセットする
+        if(count($condition) === 0){
+            $sql = "
+                SELECT * FROM user
+            ";
+        } else {
+            $sql = "
+                SELECT * FROM user WHERE
+            ";
+            
+            if(isset($condition['aaa'])){
+                $sql .= 'user ='
+            }
+        }
         
         //値バインド
         $query = DB::query($sql)->bind('bango', $bango);
         
         //実行
-        $result = $query->as_object()->execute();
+        $result = $query->as_assoc()->execute();
         
 //        foreach($result as $row){
 //            print_r($row['shaimbango'] . '<br />');

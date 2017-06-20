@@ -233,3 +233,93 @@ INFO - 2017-06-16 12:51:41 --> Fuel\Core\Request::execute - Setting main Request
 INFO - 2017-06-16 13:01:33 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
 INFO - 2017-06-16 13:01:33 --> Fuel\Core\Request::execute - Called
 INFO - 2017-06-16 13:01:33 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 13:36:35 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 13:36:36 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 13:36:36 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 13:36:55 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 13:36:55 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 13:36:55 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 13:36:55 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 13:36:55 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 13:36:55 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 13:37:07 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 13:37:07 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 13:37:07 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 13:37:18 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 13:37:18 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 13:37:18 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 13:45:07 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 13:45:07 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 13:45:07 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 13:45:14 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 13:45:14 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 13:45:14 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 14:15:47 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 14:15:47 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 14:15:47 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 14:16:04 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 14:16:04 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 14:16:04 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 16:26:23 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 16:26:24 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 16:26:24 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 16:26:40 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 16:26:40 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 16:26:40 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 16:34:46 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 16:34:46 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 16:34:46 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 16:35:34 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 16:35:34 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 16:35:34 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 16:37:20 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 16:37:20 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 16:37:20 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 16:38:37 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 16:38:37 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 16:38:37 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 16:38:54 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 16:38:54 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 16:38:54 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 17:28:10 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 17:28:10 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 17:28:10 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 17:28:51 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 17:28:51 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 17:28:51 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 17:30:46 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 17:30:46 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 17:30:46 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 17:31:26 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 17:31:26 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 17:31:26 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 17:31:56 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 17:31:56 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 17:31:56 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 17:32:01 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 17:32:01 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 17:32:01 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 17:32:26 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 17:32:26 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 17:32:26 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 17:32:46 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 17:32:46 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 17:32:46 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 17:32:59 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 17:32:59 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 17:32:59 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 17:33:43 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 17:33:43 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 17:33:43 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 17:35:43 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 17:35:43 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 17:35:43 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 17:37:33 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 17:37:33 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 17:37:33 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 17:37:37 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 17:37:38 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 17:37:38 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-16 17:37:41 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-16 17:37:41 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-16 17:37:41 --> Fuel\Core\Request::execute - Setting main Request
