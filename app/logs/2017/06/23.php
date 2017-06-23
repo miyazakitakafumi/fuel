@@ -305,3 +305,6 @@ ERROR - 2017-06-23 19:27:22 --> 42000 - SQLSTATE[42000]: Syntax error or access 
 INFO - 2017-06-23 19:28:42 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
 INFO - 2017-06-23 19:28:42 --> Fuel\Core\Request::execute - Called
 INFO - 2017-06-23 19:28:42 --> Fuel\Core\Request::execute - Setting main Request
+INFO - 2017-06-23 19:47:48 --> Fuel\Core\Request::__construct - Creating a new main Request with URI = "search/list"
+INFO - 2017-06-23 19:47:48 --> Fuel\Core\Request::execute - Called
+INFO - 2017-06-23 19:47:48 --> Fuel\Core\Request::execute - Setting main Request

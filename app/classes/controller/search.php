@@ -31,13 +31,8 @@ class Controller_Search extends Controller_Rest
 	 */
 	public function post_list()
 	{
-        //**検索条件用配列
         $condition = array();
         $val = Validation::forge();
-        
-        //**パラメータ取得
-        //リクエストパラメータに存在しない場合セットしない
-        //パラメータがあるときのみバリデーションチェック
         
         if (input::json('name') !== null) {
             $condition['name'] = input::json('name');
@@ -52,7 +47,7 @@ class Controller_Search extends Controller_Rest
         if ($val->run())
         {
            
-            $result = DailyReport::search($condition);
+            $result['daily_list'] = DailyReport::search($condition);
             return $this->response($result); 
         }
         else
