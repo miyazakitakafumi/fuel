@@ -1,4 +1,6 @@
 <?php
+use \Model\DailyReport;
+
 /**
  * Fuel is a fast, lightweight, community driven PHP5 framework.
  *
@@ -24,55 +26,40 @@ class Controller_Search extends Controller_Rest
 	/**
 	 * The basic welcome message
 	 *
-	 * @access  public
-	 * @return  Response
+	 * @param
+	 * @return json
 	 */
 	public function post_list()
 	{
         //**検索条件用配列
         $condition = array();
+        $val = Validation::forge();
         
         //**パラメータ取得
         //リクエストパラメータに存在しない場合セットしない
+        //パラメータがあるときのみバリデーションチェック
         
-        if (input::json('aaa') !== null) {
-            $condition['aaa'] = input::json('aaa');
+        if (input::json('name') !== null) {
+            $condition['name'] = input::json('name');
+            $val->add('name', 'Your name')->add_rule('max_length', 2);
         }
         
-        if (input::json('bbb') !== null) {
-            $condition['bbb'] = input::json('bbb');
+        if (input::json('email') !== null) {
+            $condition['email'] = input::json('email');
+            $val->add('email', 'Your email')->add_rule('max_length', 1);
         }
         
-        if (input::json('ccc') !== null) {
-            $condition['ccc'] = input::json('ccc');
+        if ($val->run())
+        {
+           
+            $result = DailyReport::search($condition);
+            return $this->response($result); 
+        }
+        else
+        {
+            print($val->error());
         }
         
-        //検索条件があるときのみ WHERE 句をセットする
-        if(count($condition) === 0){
-            $sql = "
-                SELECT * FROM user
-            ";
-        } else {
-            $sql = "
-                SELECT * FROM user WHERE
-            ";
-            
-            if(isset($condition['aaa'])){
-                $sql .= 'user ='
-            }
-        }
-        
-        //値バインド
-        $query = DB::query($sql)->bind('bango', $bango);
-        
-        //実行
-        $result = $query->as_assoc()->execute();
-        
-//        foreach($result as $row){
-//            print_r($row['shaimbango'] . '<br />');
-//        }
-         
-        return $this->response($result);
 	}
 
 	/**
