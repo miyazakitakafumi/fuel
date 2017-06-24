@@ -1,4 +1,6 @@
 <?php
+use \Model\DailyReport;
+
 /**
  * Fuel is a fast, lightweight, community driven PHP5 framework.
  *
@@ -22,28 +24,103 @@
 class Controller_DailyReport extends Controller_Rest
 {
 	/**
-	 * The basic welcome message
+	 * 日報検索処理
 	 *
-	 * @access  public
-	 * @return  Response
+	 * @param
+	 * @return json
 	 */
-	public function get_list()
+	public function post_search()
 	{
-        //変数
-        $id = 1;
+        $condition = array();
         
-        //SQL
-        $sql = "
-            SELECT * FROM daily_report WHERE id = :id
-        ";
+        if (input::json('title') !== null) {
+            $condition['title'] = input::json('title');
+        }
         
-        //値バインド
-        $query = DB::query($sql)->bind('id', $id);
+        if (input::json('body') !== null) {
+            $condition['body'] = input::json('body');
+        }
         
-        //実行
-        $result = $query->as_object()->execute();
-         
-        return $this->response($result);
+        if (input::json('author_id') !== null) {
+            $condition['author_id'] = input::json('author_id');
+        }
+        
+        $result['daily_list'] = DailyReport::search($condition);
+        return $this->response($result); 
+        
+	}
+    
+    /**
+	 * 日報登録処理
+	 *
+	 * @param
+	 * @return json
+	 */
+	public function post_insert()
+	{
+        $condition = array();
+        
+        if (input::json('title') !== null) {
+            $condition['title'] = input::json('title');
+        }
+        
+        if (input::json('body') !== null) {
+            $condition['body'] = input::json('body');
+        }
+        
+        if (input::json('author_id') !== null) {
+            $condition['author_id'] = input::json('author_id');
+        }
+        
+        $result['daily_list'] = DailyReport::insert($condition);
+        return $this->response($result); 
+        
+	}
+    
+    /**
+	 * 日報更新処理
+	 *
+	 * @param
+	 * @return json
+	 */
+	public function post_update()
+	{
+        $condition = array();
+        
+        if (input::json('title') !== null) {
+            $condition['title'] = input::json('title');
+        }
+        
+        if (input::json('body') !== null) {
+            $condition['body'] = input::json('body');
+        }
+        
+        if (input::json('author_id') !== null) {
+            $condition['author_id'] = input::json('author_id');
+        }
+        
+        $result['daily_list'] = DailyReport::update($condition);
+        return $this->response($result); 
+        
+	}
+    
+    /**
+	 * 日報削除処理
+	 *
+	 * @param
+	 * @return json
+	 */
+	public function post_delete()
+	{
+        $condition = array();
+        
+        if (input::json('author_id') !== null) {
+            $condition['author_id'] = input::json('author_id');
+        }
+        
+        $result['daily_list'] = DailyReport::delete($condition);
+        return $this->response($result); 
+        
 	}
 
 	/**

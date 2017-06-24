@@ -19,7 +19,7 @@
  * @package  app
  * @extends  Controller
  */
-class Controller_Search extends Controller_Rest
+class Controller_DailyReport extends Controller_Rest
 {
 	/**
 	 * The basic welcome message
@@ -30,23 +30,18 @@ class Controller_Search extends Controller_Rest
 	public function get_list()
 	{
         //変数
-//        $bango = 5000000004;
-        $bango = 1000000023;
+        $id = 1;
         
         //SQL
         $sql = "
-            SELECT * FROM w_naiteisha WHERE `shaimbango` = :bango 
+            SELECT * FROM daily_report WHERE id = :id
         ";
         
         //値バインド
-        $query = DB::query($sql)->bind('bango', $bango);
+        $query = DB::query($sql)->bind('id', $id);
         
         //実行
         $result = $query->as_object()->execute();
-        
-//        foreach($result as $row){
-//            print_r($row['shaimbango'] . '<br />');
-//        }
          
         return $this->response($result);
 	}
